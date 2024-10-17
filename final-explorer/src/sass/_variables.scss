@@ -1,5 +1,11 @@
-$color-primary : #202842;
-$color-secondary: #D0F0F8;
+$color-primary : rgb(0, 0, 0);
+$color-secondary: #000820;
 $light: #FFFFFF;
 $color-aux: #8BBBC2;
 $color-minor: #40A0EE;
+$color-font: white;
+@mixin mq($breakpointMax, $breakpointMin: 0px) {
+    @media screen and (max-width: $breakpointMax) and (min-width:$breakpointMin) {
+      @content;
+    }
+}

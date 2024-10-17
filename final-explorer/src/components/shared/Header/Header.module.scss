@@ -1,0 +1,56 @@
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    background-color: $color-primary;
+    & > ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+
+        & > a{
+            display: flex;
+            align-items: center;
+
+            :hover{
+                color: rgb(115, 159, 235);
+                text-decoration: underline  ;
+            }
+
+            @include mq(500px){
+                display: none;
+            }
+        }
+
+        :first-child{
+            @include mq(500px){
+                display: flex;
+            }
+        }
+
+        @include mq(500px){
+            justify-content: center;
+        }
+    }
+}
+
+.imgContainer{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    font-family: "FinalFantasy";
+    font-weight: 100;
+    & > img{
+        width: 20%;
+        height: auto;
+        min-width: 50px;
+    }
+    @include mq(500px){
+        width: 100%;
+    }
+    @include mq(900px){
+        width: 15%;
+    }
+}

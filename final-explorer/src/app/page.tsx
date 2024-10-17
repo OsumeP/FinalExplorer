@@ -1,7 +1,8 @@
+import { Description } from "app/components/home/Description";
 export default function Home() {
   return (
     <div>
-      <h1> Hola mundo</h1>
+      <Description/>
     </div>
   );
 }

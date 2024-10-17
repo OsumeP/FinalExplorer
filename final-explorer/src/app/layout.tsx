@@ -3,6 +3,7 @@
 import type { Metadata } from "next";
 import { Header } from "../components/shared/Header/Header";
 import { Footer } from "../components/shared/Footer";
+import '../sass/global.scss'
 
 //#endregion
 
@@ -10,7 +11,7 @@ import { Footer } from "../components/shared/Footer";
 
 export const metadata: Metadata = {
   title: "Final Explorer",
-  description: "A final fantasy explorer where you can find relevant information about the series characters",
+  description: "A final fantasy explorer where you can find relevant information about the serie's characters",
 };
 
 //#endregion
@@ -25,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <h1 className='text-8xl font-bold underline'> Hola</h1>
         <Header/>
         {children}
         <Footer/>
